@@ -13,7 +13,7 @@ Scenario Outline: Create user
   Then he should validate that it has been successfully created.
   Examples:
     | email                    | cellphone  | password |
-    | pruebaelenas53@gmail.com | 3105676753 | Elenas01 |
+    | pruebaelenas54@gmail.com | 3105676754 | Elenas01 |
 
 
 
