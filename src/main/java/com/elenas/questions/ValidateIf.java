@@ -1,5 +1,6 @@
 package com.elenas.questions;
 
+
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.targets.Target;
@@ -9,7 +10,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPres
 import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
 
     public class ValidateIf implements Question<Boolean> {
-        private final Target element;
+        private Target element;
 
         public ValidateIf(Target element){
             this.element = element;

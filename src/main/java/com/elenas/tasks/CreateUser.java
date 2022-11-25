@@ -1,6 +1,5 @@
 package com.elenas.tasks;
 
-import com.elenas.models.enums.DataUser;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
@@ -12,44 +11,39 @@ import java.util.List;
 
 import static com.elenas.userinterfaces.LoginPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class CreateUser implements Task
 {
-    private List<String> datos;
-    static String user;
-    static String password;
-    public CreateUser(List<String> datos){
-        this.datos=datos;
+    private List<String> dataUser;
+    public CreateUser(List<String> dataUser){
+        this.dataUser =dataUser;
     }
 
-    public static Performable con(List<String> datos){
-        return instrumented(CreateUser.class, datos);
+    public static Performable con(List<String> dataUser){
+        return instrumented(CreateUser.class, dataUser);
     }
     @Override
     public <T extends Actor> void performAs(T actor) {
         int i =0;
-
+        Select.country();
         actor.attemptsTo(
-                Click.on(SIGNUP_LINK),
+                WaitUntil.the(CREATE_ACCOUNT_OPTION_BUTTON,isClickable()),
+                Click.on(CREATE_ACCOUNT_OPTION_BUTTON),
+                WaitUntil.the(NAME,isClickable()),
+                Click.on(NAME),
+                Enter.keyValues(dataUser.get(i++)).into(NAME),
+                Enter.keyValues(dataUser.get(i++)).into(LAST_NAME),
                 Click.on(EMAIL),
-                Enter.keyValues(datos.get(i)).into(EMAIL));
-        user=datos.get(i);
-        actor.attemptsTo(
+                Enter.keyValues(dataUser.get(i++)).into(EMAIL),
                 Click.on(CELLPHONE),
-                Enter.keyValues(datos.get(++i)).into(CELLPHONE),
-                Enter.keyValues(datos.get(++i)).into(PASSWORD),
-                Click.on(PASSWORD));
-        password=datos.get(i);
-        actor.attemptsTo(
-                Enter.keyValues(datos.get(i)).into(CONFIRM_PASSWORD),
-                Click.on(TERMS_ADN_CONDITIONS),
-                Click.on(REGISTER_BUTTON),
-                WaitUntil.the(COMPLETE_PROFILE,isVisible())
+                Enter.keyValues(dataUser.get(i++)).into(CELLPHONE),
+                Click.on(CHECK_BOX_TERMS_AND_CONDITIONS),
+                Click.on(CODE_REFERENCIAL),
+                WaitUntil.the(CONTINUE_REGISTER_BUTTON,isVisible())
         );
 
-        DataUser.username=user;
-        DataUser.password=password;
 
     }
 }

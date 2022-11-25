@@ -1,6 +1,5 @@
 package com.elenas.tasks;
 
-import com.elenas.models.enums.DataUser;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
@@ -10,35 +9,34 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static com.elenas.userinterfaces.LoginPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class Login implements Task
 {
-    private String email;
-    private String password;
-
-    public Login(String email, String password){
-        this.email =email;
+    private final String user;
+    private final String password;
+    public Login(String user, String password){
+        this.user =user;
         this.password =password;
     }
 
-    public static Performable con(String email, String password){
-        return instrumented(Login.class, email, password);
+    public static Performable con(String user, String password){
+        return instrumented(Login.class, user, password);
     }
     @Override
     public <T extends Actor> void performAs(T actor) {
-        email= DataUser.getUsername();
-        password= DataUser.getPassword();
-        actor.attemptsTo(
-                Click.on(LOGIN_LINK),
-                Click.on(EMAIL),
-                Enter.keyValues(email).into(EMAIL),
-                Click.on(PASSWORD),
-                Enter.keyValues(password).into(PASSWORD),
+
+       actor.attemptsTo(
+               WaitUntil.the(LOGIN_OPTION_BUTTON,isClickable()),
+                Click.on(LOGIN_OPTION_BUTTON),
+                WaitUntil.the(CELLPHONE_LOGIN,isVisible()).forNoMoreThan(60).seconds(),
+                Enter.keyValues(user).into(CELLPHONE_LOGIN),
+                Enter.keyValues(password).into(PASSWORD_LOGIN),
                 Click.on(LOGIN_BUTTON),
-                WaitUntil.the(OK_BUTTON,isPresent()),
-                Click.on(OK_BUTTON)
+                WaitUntil.the(UNKNOWN_USER_TEXT,isVisible())
         );
+
 
     }
 }

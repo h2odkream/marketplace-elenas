@@ -1,20 +1,13 @@
 # language: en
-Feature: Enter the Elenas Marketplace
+Feature: Fill form with data user
     I as a user
-    I want to create a new user
-    To login Marketplace
+    I want fill form
+    To validate
 
-  Background:
-    Given the "user" open the page "https://marketplace.elenas.co"
-
-Scenario Outline: Create user
-  When creating a new user
-    | <email> | <cellphone> | <password> |
-  Then he should validate that it has been successfully created.
+Scenario Outline: Fill form
+  When complete registration form
+    |<name>| <lastName> | <email> | <cellphone> |
+  Then he should validate that the form can be completed
   Examples:
-    | email                    | cellphone  | password |
-    | pruebaelenas52@gmail.com | 3105676752 | Elenas01 |
-
-
-
-
+    | name  | lastName | email                    | cellphone  |
+    | Jaime | Duran    | jaimeduran0444@gmail.com | 3208560106 |
