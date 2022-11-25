@@ -1,0 +1,1846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login with unknown user" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-25T06:52:51" hostname="DESKTOP-JI16OSS" time="47.041">
+  <properties/>
+  <testcase name="Login failed" classname="Login with unknown user" time="47.041"/>
+  <system-out><![CDATA[01:52:51.775 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/DKREAM/Documents/GitHub/marketplace-elenas/src/test/resources/features/login_unknown_user.feature
+01:52:52.051 [Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login failed(login-with-unknown-user;login-failed)
+--------------------------------------------------------------------------------
+01:52:53.779 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.exceptions.Error
+01:52:53.779 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.questions.ValidateIf
+01:52:53.779 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.runners.FillFormRunner
+01:52:53.779 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.runners.LoginUnknownUserRunner
+01:52:53.784 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.stepdefinitions.CommonStepDefinition
+01:52:53.784 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.stepdefinitions.CreateUserStepDefinitions
+01:52:53.784 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.stepdefinitions.LoginUnknownUserStepDefinitions
+01:52:53.784 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.tasks.CreateUser
+01:52:53.784 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.tasks.Login
+01:52:53.784 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.tasks.Select
+01:52:53.784 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.userinterfaces.LoginPage
+01:52:53.950 [Test worker] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+01:52:53.960 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+01:52:53.960 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+01:52:53.974 [Test worker] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1a44ccdf
+01:52:54.042 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+01:52:54.042 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+01:52:54.047 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+01:52:54.047 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+01:52:54.047 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+01:52:54.052 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\DKREAM\AppData\Local\Temp (java.io.tmpdir)
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 477626368 bytes
+01:52:54.055 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+01:52:54.064 [Test worker] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+01:52:54.064 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+01:52:54.088 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+01:52:54.155 [Test worker] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+01:52:54.155 [Test worker] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+01:52:54.424 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1] 
+01:52:54.426 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+01:52:54.492 [Test worker] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+01:52:54.517 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+01:52:54.517 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 1
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 1
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 600000
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+01:52:54.624 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+01:52:54.658 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+01:52:54.658 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+01:52:54.658 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+01:52:55.244 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 476 (user-set)
+01:52:55.244 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 28:f0:76:ff:fe:16:65:0e (user-set)
+01:52:55.378 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+01:52:55.378 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+01:52:55.378 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@33a12f02
+01:52:55.420 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to '/wd/hub/session'
+01:52:55.472 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+01:52:55.475 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+01:52:55.475 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+01:52:55.475 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+01:53:07.917 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+01:53:07.923 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session HTTP/1.1
+X-Idempotency-Key: 970c7135-ecd4-4acb-bba4-36fa2474ff6b
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 623
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"4cb-fQgU7j+EZDeKNTRWRXq3E3HfycU"
+Date: Fri, 25 Nov 2022 06:53:07 GMT
+Connection: keep-alive
+content-length: 1227
+
+01:53:07.949 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.exceptions.Error
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.questions.ValidateIf
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.runners.FillFormRunner
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.runners.LoginUnknownUserRunner
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.stepdefinitions.CommonStepDefinition
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.stepdefinitions.CreateUserStepDefinitions
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.stepdefinitions.LoginUnknownUserStepDefinitions
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.tasks.CreateUser
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.tasks.Login
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.tasks.Select
+01:53:08.317 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .com.elenas.userinterfaces.LoginPage
+01:53:08.709 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:09.384 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+01:53:09.384 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+01:53:09.401 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:09.401 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:10.054 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"26940-JoZJOYrUExWKiYiwcGj7NRGdogI"
+Date: Fri, 25 Nov 2022 06:53:10 GMT
+Connection: keep-alive
+content-length: 158016
+
+01:53:10.064 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:10.283 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\c419e22ce47c84180e89991c25dcc69343a1b6f012161b64c1b2aaca12ed3514.png
+01:53:10.283 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-1393637076902476409
+01:53:10.283 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\c419e22ce47c84180e89991c25dcc69343a1b6f012161b64c1b2aaca12ed3514.png
+01:53:10.291 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginUnknownUserStepDefinitions.enterData - performAs
+01:53:10.540 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:10.634 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:10.634 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:11.050 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:11 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:11.050 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:11.220 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:11.242 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:11.242 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:11.323 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:11 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:11.324 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:11.480 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:11.513 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:11.513 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:11.588 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:11 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:11.592 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:11.795 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:11.841 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:11.841 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:11.917 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:11 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:11.921 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:12.015 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:12.082 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:12.110 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:12.110 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:12.195 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:12 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:12.196 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:12.367 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:12.398 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:12.398 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:12.464 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:12 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:12.464 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:12.634 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:12.658 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:12.658 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:12.738 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:12 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:12.742 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:12.914 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:12.947 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:12.947 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:13.026 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:13 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:13.026 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:13.116 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:13.183 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:13.224 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:13.224 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:13.899 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"8b-iE6c1I9/yfV5k363cmHCxPjA6og"
+Date: Fri, 25 Nov 2022 06:53:13 GMT
+Connection: keep-alive
+content-length: 139
+
+01:53:13.902 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:13.994 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed'
+01:53:13.994 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed'
+01:53:14.017 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:14 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:14.017 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:14.023 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed'
+01:53:14.025 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed'
+01:53:14.058 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:14 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:14.058 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:14.149 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:14.149 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:14.751 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"19c98-Fi3xICJNPIKc6oSXCJdwHIBQDz4"
+Date: Fri, 25 Nov 2022 06:53:14 GMT
+Connection: keep-alive
+content-length: 105624
+
+01:53:14.757 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:14.773 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\b12eddb9720a06392cf06e8a141eac197a15aa2836b4b280179552c2896b3965.png
+01:53:14.773 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4747615974510638587
+01:53:14.773 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\b12eddb9720a06392cf06e8a141eac197a15aa2836b4b280179552c2896b3965.png
+01:53:14.773 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Select.performAs - {0} clicks on #target
+01:53:14.773 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Colombia country
+01:53:15.198 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:15.198 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:15.311 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-Ey7MVkzNlvOl8oNyVzLXeTY5iCU"
+Date: Fri, 25 Nov 2022 06:53:15 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:15.311 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:15.362 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed'
+01:53:15.362 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed'
+01:53:15.382 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:15 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:15.382 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:15.456 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:15.456 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:15.566 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 265
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-Ey7MVkzNlvOl8oNyVzLXeTY5iCU"
+Date: Fri, 25 Nov 2022 06:53:15 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:15.566 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:15.571 [Forwarding clickElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/click'
+01:53:15.571 [Forwarding clickElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/click'
+01:53:15.653 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000010/click HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Fri, 25 Nov 2022 06:53:15 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:15.653 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:15.709 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:15.709 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:16.349 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"1b2e8-XwcTUVoFMwnTHE1jdAmAH0yUI5k"
+Date: Fri, 25 Nov 2022 06:53:16 GMT
+Connection: keep-alive
+content-length: 111336
+
+01:53:16.349 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:16.366 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\56fa9ec6d4650a6e2e1ae9d66e358577351026dc8b089a52c1b63510a9745d82.png
+01:53:16.372 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3916679175581524348
+01:53:16.372 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\56fa9ec6d4650a6e2e1ae9d66e358577351026dc8b089a52c1b63510a9745d82.png
+01:53:16.374 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+01:53:16.415 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:16.423 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:16.423 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:17.025 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"1b46a-H4YTzFd9Z9Jy2Jd+EyW6d2UY1Kk"
+Date: Fri, 25 Nov 2022 06:53:17 GMT
+Connection: keep-alive
+content-length: 111722
+
+01:53:17.025 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:17.037 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\078b12eae84c63fce8688615a6823a3454e3a0478d2f3925c640f2026eba463a.png
+01:53:17.037 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-5394742185346882544
+01:53:17.037 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\078b12eae84c63fce8688615a6823a3454e3a0478d2f3925c640f2026eba463a.png
+01:53:17.037 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Select.performAs - {0} clicks on #target
+01:53:17.042 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Continue button
+01:53:17.237 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:17.237 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:17.431 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 115
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-CKqKoKbepMO1c/3v/IDC4lWsx1g"
+Date: Fri, 25 Nov 2022 06:53:17 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:17.432 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:17.452 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000021/displayed'
+01:53:17.452 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000021/displayed'
+01:53:17.493 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000021/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:17 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:17.493 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:17.508 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:17.535 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:17.535 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:17.678 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 115
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-CKqKoKbepMO1c/3v/IDC4lWsx1g"
+Date: Fri, 25 Nov 2022 06:53:17 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:17.690 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:17.697 [Forwarding clickElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000021/click'
+01:53:17.697 [Forwarding clickElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000021/click'
+01:53:17.815 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000021/click HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Fri, 25 Nov 2022 06:53:17 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:17.816 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:17.858 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:17.866 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:18.486 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"1aa6c-oroulO2LzaXr2S/mlPBxgXmM8f0"
+Date: Fri, 25 Nov 2022 06:53:18 GMT
+Connection: keep-alive
+content-length: 109164
+
+01:53:18.491 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:18.500 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\14ddccc0b39701666ee689329a324c8c2338d63fdfd265ef1f6a531e9279e524.png
+01:53:18.500 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+01:53:18.500 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4100095104324491441
+01:53:18.500 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\14ddccc0b39701666ee689329a324c8c2338d63fdfd265ef1f6a531e9279e524.png
+01:53:18.600 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:18.600 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:19.445 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"1ad7c-gDAa8878W2Zq2askjROhBXUufPk"
+Date: Fri, 25 Nov 2022 06:53:19 GMT
+Connection: keep-alive
+content-length: 109948
+
+01:53:19.449 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:19.458 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\030c8da1db5362f333e7d6fa5d2836a56c24815fa4d333ebe3f0db044285bfa1.png
+01:53:19.458 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: performAs
+01:53:19.458 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-1898295041836307497
+01:53:19.458 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\030c8da1db5362f333e7d6fa5d2836a56c24815fa4d333ebe3f0db044285bfa1.png
+01:53:19.499 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginUnknownUserStepDefinitions.enterData - performAs
+01:53:19.601 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:19.632 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:19.632 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:19.732 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:19 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:19.732 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:19.902 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:19.924 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:19.924 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:20.008 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:19 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:20.009 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:20.212 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:20.254 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:20.254 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:20.326 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:20 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:20.333 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:20.505 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:20.545 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:20.545 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:20.609 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:20 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:20.617 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:20.799 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:20.816 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:20.848 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:20.848 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:20.939 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:20 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:20.939 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:21.117 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:21.215 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:21.215 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:21.539 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:21 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:21.544 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:21.743 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:21.814 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:21.815 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:21.877 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:21 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:21.879 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:21.912 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:22.067 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:22.109 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:22.109 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:22.177 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:22 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:22.177 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:22.346 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:22.387 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:22.387 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:22.447 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:22 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:22.447 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:22.651 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:22.725 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:22.725 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:22.804 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"
+Date: Fri, 25 Nov 2022 06:53:22 GMT
+Connection: keep-alive
+content-length: 12
+
+01:53:22.804 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:23.004 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:23.041 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:23.138 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:23.138 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:23.976 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"8b-LkVW1A/CyMeEcFw5vDK4LaUVYeg"
+Date: Fri, 25 Nov 2022 06:53:23 GMT
+Connection: keep-alive
+content-length: 139
+
+01:53:23.976 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:24.091 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/displayed'
+01:53:24.091 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/displayed'
+01:53:24.133 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:24 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:24.133 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:24.133 [Forwarding isElementEnabled on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/enabled'
+01:53:24.133 [Forwarding isElementEnabled on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/enabled'
+01:53:24.207 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/enabled HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:24 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:24.207 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:24.362 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:24.362 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:25.006 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"20b06-fkqBj9unRT9D1xkKgJVOxJL/ML0"
+Date: Fri, 25 Nov 2022 06:53:24 GMT
+Connection: keep-alive
+content-length: 133894
+
+01:53:25.006 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:25.023 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\2cdb3be634ee917f70aa751aa69d3c9d8a9e5955c62521e94109836269fad71c.png
+01:53:25.023 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-9020307423668096863
+01:53:25.023 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\2cdb3be634ee917f70aa751aa69d3c9d8a9e5955c62521e94109836269fad71c.png
+01:53:25.023 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} clicks on #target
+01:53:25.023 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:25.211 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://127.0.0.1:4723 : 1
+01:53:25.359 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:25.359 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:25.511 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-PnD25ocnoaLHqDYQIV7JpI4x24o"
+Date: Fri, 25 Nov 2022 06:53:25 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:25.511 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:25.563 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/displayed'
+01:53:25.563 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/displayed'
+01:53:25.608 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:25 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:25.608 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:25.774 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:25.774 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:25.956 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 698
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-PnD25ocnoaLHqDYQIV7JpI4x24o"
+Date: Fri, 25 Nov 2022 06:53:25 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:25.956 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:25.965 [Forwarding clickElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/click'
+01:53:25.965 [Forwarding clickElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/click'
+01:53:26.083 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000004e/click HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Fri, 25 Nov 2022 06:53:26 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:26.083 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:26.157 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:26.157 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:26.983 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"97170-rSEgA0DvJ/7PAET+gM0qSSiLh38"
+Date: Fri, 25 Nov 2022 06:53:26 GMT
+Connection: keep-alive
+content-length: 618864
+
+01:53:27.003 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:27.056 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\a07e7e776bcf5cfc7026922351605d5f3dc93085b5ed0821c1672d3e2e97ddce.png
+01:53:27.056 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+01:53:27.056 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-2007650410586713790
+01:53:27.056 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\a07e7e776bcf5cfc7026922351605d5f3dc93085b5ed0821c1672d3e2e97ddce.png
+01:53:27.127 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Cellphone login
+01:53:27.158 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:27.158 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:27.485 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 732
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"8b-PPMSY4+ZACcbnAegValWSxC7SnQ"
+Date: Fri, 25 Nov 2022 06:53:27 GMT
+Connection: keep-alive
+content-length: 139
+
+01:53:27.485 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:27.579 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/displayed'
+01:53:27.579 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/displayed'
+01:53:27.616 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:27 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:27.620 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:27.621 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/displayed'
+01:53:27.624 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/displayed'
+01:53:27.657 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:27 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:27.657 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:27.706 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:27.713 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:28.332 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"21392-CHTlq7Wg9XrqGEmi8gNzwlBSMVc"
+Date: Fri, 25 Nov 2022 06:53:28 GMT
+Connection: keep-alive
+content-length: 136082
+
+01:53:28.332 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:28.347 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\be25bda584b16d2fe66639a517615aae70632812900999d36c4f61cd8b1d1032.png
+01:53:28.351 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3782839260265119720
+01:53:28.351 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\be25bda584b16d2fe66639a517615aae70632812900999d36c4f61cd8b1d1032.png
+01:53:28.352 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} enters #theTextAsAString into #target
+01:53:28.393 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Cellphone login
+01:53:28.456 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:28.459 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:28.573 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 732
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-hY9HVRJZbQEitfqCz4qfEspi+2M"
+Date: Fri, 25 Nov 2022 06:53:28 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:28.573 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:28.581 [Forwarding sendKeysToElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/value'
+01:53:28.581 [Forwarding sendKeysToElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/value'
+01:53:28.694 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff0000006e/value HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 181
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Fri, 25 Nov 2022 06:53:28 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:28.694 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:28.789 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:28.789 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:29.400 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"23724-JA3EzJk7sv7rKM4munY6NtlMMtM"
+Date: Fri, 25 Nov 2022 06:53:29 GMT
+Connection: keep-alive
+content-length: 145188
+
+01:53:29.404 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:29.409 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\2d87090a981829c2a2f0b90dcbe587c313ae8ccf8b8005b78619298d5ebae169.png
+01:53:29.414 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+01:53:29.414 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-6081924246381852767
+01:53:29.414 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\2d87090a981829c2a2f0b90dcbe587c313ae8ccf8b8005b78619298d5ebae169.png
+01:53:29.449 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} enters #theTextAsAString into #target
+01:53:29.474 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Password login
+01:53:29.523 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:29.523 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:29.625 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 729
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-TFippTfSFHqQnqvuIEsiATSr4WY"
+Date: Fri, 25 Nov 2022 06:53:29 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:29.625 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:29.625 [Forwarding sendKeysToElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000073/value'
+01:53:29.632 [Forwarding sendKeysToElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000073/value'
+01:53:29.691 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000073/value HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 141
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Fri, 25 Nov 2022 06:53:29 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:29.691 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:29.758 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:29.758 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:30.383 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"24864-NG80BRi6cmLc6kFPWw1iO/qF5fs"
+Date: Fri, 25 Nov 2022 06:53:30 GMT
+Connection: keep-alive
+content-length: 149604
+
+01:53:30.383 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:30.399 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\a06d9d7a0e2f46d49b982ef31d34115663975313da6b01fb4fffe99c57b6e432.png
+01:53:30.399 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+01:53:30.399 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-751215486522563030
+01:53:30.399 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\a06d9d7a0e2f46d49b982ef31d34115663975313da6b01fb4fffe99c57b6e432.png
+01:53:30.448 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} clicks on #target
+01:53:30.448 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+01:53:30.612 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:30.612 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:30.810 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 672
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-DK9P4mBYZin3AmohPNChMRF3j0k"
+Date: Fri, 25 Nov 2022 06:53:30 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:30.810 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:30.843 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000077/displayed'
+01:53:30.843 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000077/displayed'
+01:53:30.881 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000077/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:30 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:30.881 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:30.950 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:30.954 [Forwarding findElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element'
+01:53:31.112 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 672
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-DK9P4mBYZin3AmohPNChMRF3j0k"
+Date: Fri, 25 Nov 2022 06:53:31 GMT
+Connection: keep-alive
+content-length: 137
+
+01:53:31.112 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:31.120 [Forwarding clickElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000077/click'
+01:53:31.120 [Forwarding clickElement on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000077/click'
+01:53:31.256 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000077/click HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Fri, 25 Nov 2022 06:53:31 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:31.261 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:31.293 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:31.293 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:31.934 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"24084-rFCL++tBNKD2o46MwAf3p8khE78"
+Date: Fri, 25 Nov 2022 06:53:31 GMT
+Connection: keep-alive
+content-length: 147588
+
+01:53:31.934 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:31.943 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\0aa8a30ff56235a2ec0d8d8369179deb7174a36ccaa7d8610da879be6b00f114.png
+01:53:31.943 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+01:53:31.943 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3557514863897845423
+01:53:31.943 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\0aa8a30ff56235a2ec0d8d8369179deb7174a36ccaa7d8610da879be6b00f114.png
+01:53:32.007 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Unknown_user
+01:53:32.038 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:32.038 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:32.562 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 673
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"8b-ArQyMjlI+k3fRTDcGCxhP5ggiAM"
+Date: Fri, 25 Nov 2022 06:53:32 GMT
+Connection: keep-alive
+content-length: 139
+
+01:53:32.566 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:32.635 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed'
+01:53:32.635 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed'
+01:53:32.669 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:32 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:32.669 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:32.674 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed'
+01:53:32.674 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed'
+01:53:32.715 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:32 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:32.715 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:32.841 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:32.841 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:33.522 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"25a00-T5GDf7GO8ZKB646L4jqwiUvVJKk"
+Date: Fri, 25 Nov 2022 06:53:33 GMT
+Connection: keep-alive
+content-length: 154112
+
+01:53:33.522 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:33.537 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\eb02b1d77251cec7d2b4546ac5c0314a995a4e73667b293162430b2d1ad69dbb.png
+01:53:33.538 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: performAs
+01:53:33.538 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-6859196530701144907
+01:53:33.538 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\eb02b1d77251cec7d2b4546ac5c0314a995a4e73667b293162430b2d1ad69dbb.png
+01:53:33.590 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:33.590 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:34.216 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"25a00-T5GDf7GO8ZKB646L4jqwiUvVJKk"
+Date: Fri, 25 Nov 2022 06:53:34 GMT
+Connection: keep-alive
+content-length: 154112
+
+01:53:34.224 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:34.240 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\eb02b1d77251cec7d2b4546ac5c0314a995a4e73667b293162430b2d1ad69dbb.png
+01:53:34.626 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:34.626 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:35.261 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"25a00-T5GDf7GO8ZKB646L4jqwiUvVJKk"
+Date: Fri, 25 Nov 2022 06:53:35 GMT
+Connection: keep-alive
+content-length: 154112
+
+01:53:35.261 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:35.285 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\eb02b1d77251cec7d2b4546ac5c0314a995a4e73667b293162430b2d1ad69dbb.png
+01:53:35.385 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Unknown_user
+01:53:35.411 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:35.411 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:35.578 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 673
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"8b-ArQyMjlI+k3fRTDcGCxhP5ggiAM"
+Date: Fri, 25 Nov 2022 06:53:35 GMT
+Connection: keep-alive
+content-length: 139
+
+01:53:35.578 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:35.661 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed'
+01:53:35.661 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed'
+01:53:35.702 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:35 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:35.702 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:35.792 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Unknown_user
+01:53:35.834 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'POST' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:35.834 [Forwarding findElements on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for POST '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements'
+01:53:36.017 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/elements HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 673
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"8b-ArQyMjlI+k3fRTDcGCxhP5ggiAM"
+Date: Fri, 25 Nov 2022 06:53:36 GMT
+Connection: keep-alive
+content-length: 139
+
+01:53:36.024 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:36.076 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed'
+01:53:36.076 [Forwarding isElementDisplayed on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed'
+01:53:36.107 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/element/00000000-0000-00e7-ffff-ffff00000099/displayed HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Fri, 25 Nov 2022 06:53:36 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:36.107 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:36.148 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:36.149 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:36.784 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"25a00-T5GDf7GO8ZKB646L4jqwiUvVJKk"
+Date: Fri, 25 Nov 2022 06:53:36 GMT
+Connection: keep-alive
+content-length: 154112
+
+01:53:36.784 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:36.792 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\eb02b1d77251cec7d2b4546ac5c0314a995a4e73667b293162430b2d1ad69dbb.png
+01:53:36.842 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'GET' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:36.842 [Forwarding screenshot on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for GET '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot'
+01:53:37.534 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033/screenshot HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"25a00-T5GDf7GO8ZKB646L4jqwiUvVJKk"
+Date: Fri, 25 Nov 2022 06:53:37 GMT
+Connection: keep-alive
+content-length: 154112
+
+01:53:37.542 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+01:53:37.558 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\DKREAM\Documents\GitHub\marketplace-elenas\target\site\serenity\eb02b1d77251cec7d2b4546ac5c0314a995a4e73667b293162430b2d1ad69dbb.png
+01:53:37.568 [Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login failed
+----------------------------------------------------------------------?[0m
+01:53:37.722 [Forwarding quit on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]' for 'DELETE' to 'http://127.0.0.1:4723/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033'
+01:53:37.723 [Forwarding quit on session af0edd0a-d3a2-4d8f-96a0-9665dca82033 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723] for DELETE '/wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033'
+01:53:38.570 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /wd/hub/session/af0edd0a-d3a2-4d8f-96a0-9665dca82033 HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Type: application/json; charset=utf-8
+host: 127.0.0.1:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Fri, 25 Nov 2022 06:53:38 GMT
+Connection: keep-alive
+content-length: 14
+
+01:53:38.570 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://127.0.0.1:4723 for channel [id: 0x6a7e9a31, L:/127.0.0.1:58222 - R:/127.0.0.1:4723]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
