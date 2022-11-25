@@ -1,4 +1,4 @@
-# marketplace-elenas
+# Marketplace Elenas
 
 ### Automatización Web 
 En la rama "web" se encuentra la automatizacón web del proyecto, en la cual se realizó la automatización de el registro y loging de un usuario.
