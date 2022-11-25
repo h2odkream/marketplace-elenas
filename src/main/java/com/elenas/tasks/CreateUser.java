@@ -45,7 +45,7 @@ public class CreateUser implements Task
                 Enter.keyValues(datos.get(i)).into(CONFIRM_PASSWORD),
                 Click.on(TERMS_ADN_CONDITIONS),
                 Click.on(REGISTER_BUTTON),
-                WaitUntil.the(COMPLETE_PROFILE,isVisible())
+                WaitUntil.the(PERFIL,isVisible())
         );
 
         DataUser.username=user;

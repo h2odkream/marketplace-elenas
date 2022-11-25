@@ -27,8 +27,8 @@ public class Login implements Task
     }
     @Override
     public <T extends Actor> void performAs(T actor) {
-        email= DataUser.getUsername();
-        password= DataUser.getPassword();
+        //email= email;
+        //password= DataUser.getPassword();
         actor.attemptsTo(
                 Click.on(LOGIN_LINK),
                 Click.on(EMAIL),
@@ -36,7 +36,7 @@ public class Login implements Task
                 Click.on(PASSWORD),
                 Enter.keyValues(password).into(PASSWORD),
                 Click.on(LOGIN_BUTTON),
-                WaitUntil.the(OK_BUTTON,isPresent()),
+               WaitUntil.the(OK_BUTTON,isPresent()),
                 Click.on(OK_BUTTON)
         );
 

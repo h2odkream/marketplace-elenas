@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features = "src/test/resources/features/login.feature",
+		features = {"src/test/resources/features/create_user.feature","src/test/resources/features/login.feature"},
 		glue = {"com.elenas.stepdefinitions"},
 		snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class LoginRunner {
+public class CreateUserRunner {
 
 }

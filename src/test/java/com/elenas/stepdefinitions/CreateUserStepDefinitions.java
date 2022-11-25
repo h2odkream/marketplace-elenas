@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 import java.util.List;
 
 import static com.elenas.exceptions.Error.ERROR_LOGIN_MESSAGE;
-import static com.elenas.userinterfaces.LoginPage.COMPLETE_PROFILE;
+import static com.elenas.userinterfaces.LoginPage.PERFIL;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -26,7 +26,7 @@ public class CreateUserStepDefinitions {
     @Then("he should validate that it has been successfully created.")
     public void heShouldValidateThatItHasBeenSuccessfullyCreated() {
         theActorInTheSpotlight().should(
-                seeThat(ValidateIf.theElementIsPresent(COMPLETE_PROFILE))
+                seeThat(ValidateIf.theElementIsPresent(PERFIL))
                         .orComplainWith(Error.class, ERROR_LOGIN_MESSAGE)
         );
     }

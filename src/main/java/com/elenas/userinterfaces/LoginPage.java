@@ -15,7 +15,7 @@ public class LoginPage {
 	public static final Target REGISTER_BUTTON = Target.the("Register button").locatedBy("//button[@class=\"ant-btn ant-btn-primary ant-btn-block\"]");
 	public static final Target LOGIN_BUTTON = Target.the("Login button").locatedBy("//button[@class=\"ant-btn ant-btn-primary ant-btn-block\"]");
 	public static final Target OK_BUTTON = Target.the("Ok button").locatedBy("(//button[@class=\"ant-btn ant-btn-primary\"])[2]");
-	public static final Target COMPLETE_PROFILE = Target.the("Complete your profile").locatedBy("//div[contains(text(),\"¡Completa tu perfil y destaca tu marca!\")]");
+	public static final Target PERFIL = Target.the("Complete your profile").locatedBy("//h3[contains(text(),\"Perfil\")]");
 	public static final Target CALIFICATIONS_MODULE = Target.the("Complete your profile").locatedBy("//h2[contains(text(),\"Calificaciones\")]");
 
 }
