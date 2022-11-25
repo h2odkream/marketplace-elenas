@@ -16,4 +16,4 @@ Las pruebas se corren con el comando `gradle test aggregate`.
 La documentación viva será generada en `target/site/serenity/index.html`
 
 ## Pipeline CI:
-El pipeline está creado en Github Actions, por lo que se encuentra en ./github/workflows/ci.yaml, el alcance se hizo hasta la compilación del binario.
+El pipeline está creado en Github Actions, por lo que se encuentra en ./github/workflows/ci.yaml.
