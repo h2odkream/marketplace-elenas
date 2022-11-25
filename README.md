@@ -1,4 +1,4 @@
-# serenitybdd-móvil
+# Serenitybdd móvil
 Un proyecto base para automatización móvil usando Appium, serenityBDD, gradle y scraenplay 
 
 En el archivo serenity.properties, cambiar las siguientes propiedades por las correspondientes:
