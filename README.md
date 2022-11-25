@@ -9,11 +9,11 @@ En el archivo serenity.properties, cambiar la propiedad webdriver.chrome.driver 
 
 # Correr las pruebas de manera exitosa
 Para correr las pruebas de manera exitosa, en el features/create_user.feature, se debe cambiar el correo y el número de teléfono.
-####Nota:
+#### Nota:
 No es necesario que sean datos reales.
 
 Las pruebas se corren con el comando `gradle test aggregate`.
 La documentación viva será generada en `target/site/serenity/index.html`
 
-##Pipeline CI:
+## Pipeline CI:
 El pipeline está creado en Github Actions, por lo que se encuentra en ./github/workflows/ci.yaml, el alcance se hizo hasta la compilación del binario.
