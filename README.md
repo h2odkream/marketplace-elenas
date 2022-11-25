@@ -1,5 +1,5 @@
-# serenitybdd-web
-Un proyecto base para automatización web usando serenityBDD, gradle y scraenplay 
+# Serenitybdd web
+Un proyecto base para automatización web usando serenityBDD, gradle y screenplay 
 
 En el archivo serenity.properties, cambiar la propiedad webdriver.chrome.driver a:
 ```
