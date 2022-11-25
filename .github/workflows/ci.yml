@@ -31,8 +31,8 @@ jobs:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
-      - name: Build and analyze
-        run: ./gradlew clean build
+      - name: Build
+        run: gradle build
         #env:
           # Needed to get some information about the pull request, if any
           #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
