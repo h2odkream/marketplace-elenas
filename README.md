@@ -1,5 +1,5 @@
 # Serenitybdd móvil
-Un proyecto base para automatización móvil usando Appium, serenityBDD, gradle y scraenplay 
+Un proyecto base para automatización móvil usando Appium, serenityBDD, gradle y screenplay 
 
 En el archivo serenity.properties, cambiar las siguientes propiedades por las correspondientes:
 ```
