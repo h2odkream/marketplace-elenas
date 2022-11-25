@@ -1,7 +1,7 @@
 /build
 /.gradle
 /.idea
-/target
+
 /out
 .classpath
 .project
