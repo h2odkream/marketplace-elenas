@@ -1,6 +1,5 @@
 group 'com.elenas'
 version '1.0.0'
-defaultTasks 'clean', 'test', 'aggregate'
 
 repositories {
     mavenCentral()
@@ -36,7 +35,7 @@ ext {
 }
 
 dependencies {
-    implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+    //implementation "ch.qos.logback:logback-classic:${logbackVersion}"
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityCoreVersion"
 
 
@@ -54,8 +53,8 @@ dependencies {
 }
 
 test {
-    testLogging.showStandardStreams = true
-    testLogging.exceptionFormat = 'full'
+    //testLogging.showStandardStreams = true
+    //testLogging.exceptionFormat = 'full'
     maxParallelForks = Runtime.runtime.availableProcessors() - 1
     systemProperties System.getProperties()
 }
